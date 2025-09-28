@@ -39,14 +39,14 @@ void push(stack* stack, int value){
 }
 
 void pop(stack* stack){
-    if(!isEmpty(stack)){
+    if(!isStackEmpty(stack)){
         stack->items[stack->top+1] = 0;
         stack->top--;
     }
 }
 
 void printStack(stack* stack){
-    if(!isEmpty(stack)){
+    if(!isStackEmpty(stack)){
         for(int i=0; i<stack->top+1; i++){
             printf("%d ", stack->items[i]);
         }
@@ -55,7 +55,7 @@ void printStack(stack* stack){
 }
 
 int peek(stack* stack){
-    if(!isEmpty(stack)) return stack->items[stack->top];
+    if(!isStackEmpty(stack)) return stack->items[stack->top];
     else {
         printf("Stack is empty\n");
         return -1;

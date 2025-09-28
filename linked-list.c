@@ -77,11 +77,11 @@ bool isLinkedListEmpty(node* root){
 }
 
 node getStart(node* root){
-    if(!isEmpty(root)) return *root;
+    if(!isLinkedListEmpty(root)) return *root;
 }
 
 node getEnd(node* root){
-    if(!isEmpty(root)){
+    if(!isLinkedListEmpty(root)){
         node* current = root;
         while(current->next != NULL){
             current = current->next;
