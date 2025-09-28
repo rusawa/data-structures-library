@@ -1,14 +1,14 @@
 #ifndef __DATA_STRUCTURES_H__
 #define __DATA_STRUCTURES_H__
 
+#include <stdbool.h>
+
 //========================LINKED LIST========================
 typedef struct node {
     int value;
     struct node* next;
 } node; 
 
-
-//========================LINKED LIST========================
 node* initLinkedList();
 int printLinkedList(node* root);
 void addStart(node** root, int value);
