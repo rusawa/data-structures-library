@@ -1,6 +1,8 @@
 #include "data-structures.h"
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
+
 
 //========================STACK========================
 stack* createStack(){
