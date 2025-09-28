@@ -70,7 +70,7 @@ void removeEnd(node* root){
     }
 }
 
-bool isEmpty(node* root){
+bool isLinkedListEmpty(node* root){
     if(root == NULL) return 1;
     else return 0;
 }
@@ -143,3 +143,9 @@ void clearLinkedList(node** root){
     }
     *root = NULL;
 }
+
+
+
+
+
+
